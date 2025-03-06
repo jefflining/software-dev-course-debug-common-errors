@@ -24,7 +24,7 @@ Think about which debugging methods you found most useful and how you might appl
 // Description:
 // This program is intended to display a simple prompt in the console but fails to run.
 
-console.log("Welcome to the bootcamp
+console.log("Welcome to the bootcamp"); // This was a syntax error because it was missing a closing double quotation mark, closing parenthses, and semicolon
 
 // What’s Wrong?
 
@@ -33,7 +33,7 @@ console.log("Welcome to the bootcamp
 // Description:
 // This code attempts to multiply each number in an array by 2 and display the results. However, it crashes at runtime.
 
-let numbers = [2, 4, "eight"];
+let numbers = [2, 4, 8]; // This is a logic error resulting from the string "eight" being entered instead of the number eight
 for (let i = 0; i < numbers.length; i++) {
   let doubled = numbers[i] * 2;
   console.log(doubled);
@@ -49,7 +49,7 @@ for (let i = 0; i < numbers.length; i++) {
 
 function isPrime(num) {
   if (num < 2) return false;
-  for (let i = 2; i < num; i++) {
+  for (let i = 1; i < num; i++) { // This logic error results because i was set equal to 2 rather than 1
     if (num % i === 0) {
       return true;  // Supposed to indicate num is NOT prime
     }
