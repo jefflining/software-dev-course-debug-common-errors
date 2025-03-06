@@ -33,7 +33,7 @@ console.log("Welcome to the bootcamp"); // This was a syntax error because it wa
 // Description:
 // This code attempts to multiply each number in an array by 2 and display the results. However, it crashes at runtime.
 
-let numbers = [2, 4, 8]; // This is a logic error resulting from the string "eight" being entered instead of the number eight
+let numbers = [2, 4, 8]; // This is a runtime error resulting from the string "eight" being entered instead of the number eight
 for (let i = 0; i < numbers.length; i++) {
   let doubled = numbers[i] * 2;
   console.log(doubled);
