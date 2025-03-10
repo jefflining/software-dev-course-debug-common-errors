@@ -49,7 +49,7 @@ for (let i = 0; i < numbers.length; i++) {
 
 function isPrime(num) {
   if (num < 2) return false;
-  for (let i = 1; i < num; i++) { // This logic error results because i was set equal to 2 rather than 1
+  for (let i = 1; i < num; i++) { // This logic error results because i was set equal to 2 rather than equal to 1
     if (num % i === 0) {
       return true;  // Supposed to indicate num is NOT prime
     }
